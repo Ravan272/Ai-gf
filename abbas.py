@@ -100,7 +100,7 @@ def gf():
         }), 500
 
     # HARD enforcement
-    reply = reply.replace("\n", " ")[:150]  # one-line max
+    reply = reply.replace("\n", " ")  # one-line max
     
     return jsonify({
         "prompt": user_input,
